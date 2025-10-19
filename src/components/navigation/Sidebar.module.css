@@ -1,0 +1,124 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  min-height: 100vh;
+  padding: 32px 24px;
+  background: linear-gradient(180deg, #0f172a 0%, #1d4ed8 100%);
+  color: #e2e8f0;
+  border-right: 1px solid rgba(226, 232, 240, 0.12);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+
+.brandMark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(226, 232, 240, 0.18);
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.brandTitle {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.brandSubtitle {
+  margin: 2px 0 0;
+  font-size: 0.8rem;
+  color: rgba(226, 232, 240, 0.7);
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 12px;
+  padding: 10px 12px 10px 40px;
+  color: rgba(226, 232, 240, 0.8);
+  font-weight: 500;
+  transition: var(--transition, all 0.24s ease);
+}
+
+.linkAktif {
+  background: rgba(226, 232, 240, 0.16);
+  color: #ffffff;
+}
+
+.link:hover .content {
+  transform: translateX(4px);
+  color: #ffffff;
+}
+
+.indicator {
+  position: absolute;
+  left: 12px;
+  width: 3px;
+  height: 18px;
+  border-radius: 999px;
+  background: transparent;
+  transition: var(--transition, all 0.24s ease);
+}
+
+.indicatorAktif {
+  background: #ffffff;
+}
+
+.content {
+  display: inline-flex;
+  gap: 12px;
+  align-items: center;
+  transform: translateX(0);
+  transition: var(--transition, all 0.24s ease);
+}
+
+.contentAktif {
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+.footer {
+  margin-top: 48px;
+  padding: 18px 16px;
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.45);
+  border: 1px solid rgba(226, 232, 240, 0.12);
+}
+
+.footerTitle {
+  margin: 0 0 8px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: rgba(226, 232, 240, 0.7);
+}
+
+.footerText {
+  margin: 0;
+  font-size: 0.85rem;
+  color: rgba(226, 232, 240, 0.9);
+}

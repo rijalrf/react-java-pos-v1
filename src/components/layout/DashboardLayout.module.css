@@ -1,0 +1,33 @@
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  background: var(--color-background, #f6f8fc);
+}
+
+.panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  padding: 24px 36px 36px;
+  background: var(--color-background, #f6f8fc);
+  overflow-y: auto;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .panel {
+    min-height: auto;
+  }
+
+  .main {
+    padding: 20px;
+  }
+}

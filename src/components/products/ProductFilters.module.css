@@ -1,0 +1,48 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: minmax(220px, 2fr) minmax(180px, 1fr) auto auto;
+  gap: 14px;
+  align-items: end;
+  margin-bottom: 24px;
+}
+
+.inputField {
+  width: 100%;
+}
+
+.sortSelect {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #0f172a;
+}
+
+.sortSelect select {
+  appearance: none;
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: var(--radius-md, 12px);
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  background: url('data:image/svg+xml,%3Csvg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M1 1L7 7L13 1" stroke="%231F2937" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/%3E%3C/svg%3E')
+    no-repeat right 14px center / 14px;
+  transition: var(--transition, all 0.24s ease);
+}
+
+.sortSelect select:focus {
+  border-color: var(--color-primary, #2563eb);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,44 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.pageHeader h2 {
+  margin: 0 0 8px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.pageHeader p {
+  margin: 0;
+  color: var(--color-muted, #64748b);
+  line-height: 1.6;
+}
+
+.dataSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.alert {
+  border-left: 4px solid rgba(245, 158, 11, 0.9);
+  background: rgba(245, 158, 11, 0.12);
+  color: #92400e;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.paginationRow {
+  display: flex;
+  justify-content: center;
+}
+
+.pageFooter {
+  text-align: center;
+  color: var(--color-muted, #64748b);
+  font-size: 0.85rem;
+  padding: 16px 0 24px;
+  border-top: 1px solid var(--color-border, #e2e8f0);
+}

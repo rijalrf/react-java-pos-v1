@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.navButton {
+  appearance: none;
+  border: 1px solid var(--color-border, #e2e8f0);
+  background: var(--color-surface, #ffffff);
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--color-secondary, #1f2937);
+  cursor: pointer;
+  transition: var(--transition, all 0.24s ease);
+}
+
+.navButton:hover:not(:disabled) {
+  border-color: rgba(37, 99, 235, 0.32);
+  color: var(--color-primary, #2563eb);
+}
+
+.navButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.pageList {
+  display: flex;
+  list-style: none;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.pageButton {
+  appearance: none;
+  border: none;
+  background: rgba(37, 99, 235, 0.08);
+  color: var(--color-primary, #2563eb);
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-radius: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: var(--transition, all 0.24s ease);
+}
+
+.pageButton:hover {
+  background: rgba(37, 99, 235, 0.18);
+}
+
+.active {
+  background: var(--color-primary, #2563eb);
+  color: #ffffff;
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.2);
+}
+
+.ellipsis {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-muted, #64748b);
+  padding: 0 6px;
+  font-size: 1rem;
+}

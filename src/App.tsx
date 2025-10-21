@@ -7,6 +7,7 @@ import PromoPage from '@/pages/PromoPage'
 import ProductsPage from '@/pages/ProductsPage'
 import SettingsPage from '@/pages/SettingsPage'
 import SalesPage from '@/pages/SalesPage'
+import UsersPage from '@/pages/UsersPage'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/" element={<DashboardLayout />}>
             <Route index element={<DashboardPage />} />
             <Route path="produk" element={<ProductsPage />} />
+            <Route path="pengguna" element={<UsersPage />} />
             <Route path="penjualan" element={<SalesPage />} />
             <Route path="promo" element={<PromoPage />} />
             <Route path="pengaturan" element={<SettingsPage />} />

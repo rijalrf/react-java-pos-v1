@@ -1,15 +1,10 @@
+import type { Pagination } from '@/types/pagination'
+
 export type Product = {
   id: number
   name: string
   price: number
   stock: number
-}
-
-export type Pagination = {
-  currentPage: number
-  pageSize: number
-  totalPages: number
-  count: number
 }
 
 export type ProductListResponse = {
@@ -21,6 +16,8 @@ export type ProductListResponse = {
     pagination: Pagination
   }
 }
+
+export type { Pagination } from '@/types/pagination'
 
 export type ProductItemResponse = {
   code: number

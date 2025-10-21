@@ -5,6 +5,7 @@ import {
   FiHome,
   FiSettings,
   FiTag,
+  FiUsers,
 } from 'react-icons/fi'
 
 import styles from './Sidebar.module.css'
@@ -12,6 +13,7 @@ import styles from './Sidebar.module.css'
 const menuItems = [
   { label: 'Ringkasan', icon: FiHome, to: '/' },
   { label: 'Produk', icon: FiBox, to: '/produk' },
+  { label: 'Pengguna', icon: FiUsers, to: '/pengguna' },
   { label: 'Penjualan', icon: FiBarChart2, to: '/penjualan' },
   { label: 'Promo', icon: FiTag, to: '/promo' },
   { label: 'Pengaturan', icon: FiSettings, to: '/pengaturan' },

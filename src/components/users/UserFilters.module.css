@@ -1,0 +1,24 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: minmax(220px, 2fr) auto auto;
+  gap: 14px;
+  align-items: end;
+  margin-bottom: 24px;
+}
+
+.inputField {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    align-items: stretch;
+  }
+}
